@@ -50,4 +50,35 @@ NOVO [COLOR white]-=[/COLOR][COLOR green]Torrent[/COLOR][COLOR gold]BR[/COLOR][C
 </extension>
 </addon>
 
+<addon id="plugin.program.BUILDSTWTUTORIAIS" name="-[B][COLOR white].[COLOR mediumblue]WIZARD [COLOR lime]BUILDS [COLOR yellow]TWTutoriais [COLOR white][/COLOR][/B]-" version="1.6.0" provider-name="[B][COLOR lime]TWTutoriais - YES, I'M THE BEST[/COLOR][/B]">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.six" />
+    <import addon="script.module.kodi-six" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">WIZARD BUILDS TWTUTORIAIS</summary>
+    <description lang="en">[COLOR yellow]OFICIAL WIZARD BUILDS TWTUTORIAIS[/COLOR]
+[COLOR lime]Instalador para instalação das BUILDS TONYWARLLEY TUTORIAIS, Cópia não autorizada, Uso conteúdo é pessoal não upamos nada que não esteja na internet e canal não se responsabiliza danos materiais e judiciais do mal uso do Kodi. Fazemos instalações e review sob vigência
+Fair Use[/COLOR]
+
+[COLOR yellow]Que DÓ das formiguinhas...kkk
+Nunca Serão, Jamais Serão!
+Continua sem Mundial...kkk[/COLOR]
+</description>
+    <platform>all</platform>
+    <assets>
+				<icon>icon.png</icon>
+				<fanart>fanart.jpg</fanart>
+				<banner></banner>
+				<clearlogo></clearlogo>
+				<screenshot></screenshot>
+		</assets>
+  </extension>
+</addon>
+
 </addons>
