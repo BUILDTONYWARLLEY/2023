@@ -530,7 +530,6 @@ def firstRunSettings():
             self.trakt      = 301
             self.debrid     = 302
             self.login      = 303
-            self.alluc      = 314
             self.profiles   = 305
             self.advanced   = 306
             self.favourites = 307
@@ -539,9 +538,8 @@ def firstRunSettings():
             self.whitelist  = 310
             self.cache      = 311
             self.showdialog()
-            self.controllist = [self.trakt, self.debrid, self.login, self.profiles, self.advanced, self.favourites, self.superfav, self.repo, self.whitelist, self.cache,  self.alluc]
-            self.controlsettings = ['keeptrakt', 'keepdebrid', 'keeplogin', 'keepprofiles', 'keepadvanced', 'keepfavourites', 'keeprepos', 'keepsuper', 'keepwhitelist', 'clearcache', 'keepalluc']
-									
+            self.controllist = [self.trakt, self.debrid, self.login, self.profiles, self.advanced, self.favourites, self.superfav, self.repo, self.whitelist, self.cache]
+            self.controlsettings = ['keeptrakt', 'keepdebrid', 'keeplogin', 'keepprofiles', 'keepadvanced', 'keepfavourites', 'keeprepos', 'keepsuper', 'keepwhitelist', 'clearcache']									
             for item in self.controllist:
                 if wiz.getS(self.controlsettings[self.controllist.index(item)]) == 'true':
                     self.getControl(item).setSelected(True)
@@ -570,7 +568,7 @@ def firstRun():
     class MyWindow(xbmcgui.WindowXMLDialog):
         def __init__(self, *args, **kwargs):
             self.title = THEME3 % ADDONTITLE
-            self.msg   = "Atualmente nenhuma BUILD instalada de %s.\n\nSelecione 'Build Menu' para instalar uma Build TWTUTORIAIS ou 'Ignore' para nunca mais ver esta mensagem.\n\nThank you for choosing %s." % (ADDONTITLE, ADDONTITLE)
+            self.msg   = "Currently no build installed from %s.\n\nSelect 'Build Menu' to install a Community Build from us or 'Ignore' to never see this message again.\n\nThank you for choosing %s." % (ADDONTITLE, ADDONTITLE)
             self.msg   = THEME2 % self.msg
 
         def onInit(self):

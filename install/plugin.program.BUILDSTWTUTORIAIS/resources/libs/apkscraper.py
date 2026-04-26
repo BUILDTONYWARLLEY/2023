@@ -20,6 +20,15 @@
 version = 0.1
 from . import wizard as wiz
 import re
+from urllib.parse import urljoin
+
+# Define a default theme color or value for THEME1
+THEME1 = "default_theme"  # Replace with actual theme value as needed
+
+# Define addFile if not already defined or import it from the appropriate module
+def addFile(*args, **kwargs):
+	# Placeholder implementation; replace with actual logic as needed
+	print("addFile called with:", args, kwargs)
 
 
 def apkScraper(name=""):

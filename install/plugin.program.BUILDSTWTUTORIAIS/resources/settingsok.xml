@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
-	<category label="Build ">
-		<setting type="lsep" label="Build Atual:"/>
-		<setting id="buildname" type="text" label="Build Instalada: " enable="false" default=""/>
-		<setting id="buildversion" type="text" label="Version Instalada: " enable="false" default=""/>
-		<setting id="buildtheme" type="text" label="Thema Instalado: " enable="false" default=""/>
+	<category label="Build Options">
+		<setting type="lsep" label="Current Build:"/>
+		<setting id="buildname" type="text" label="Installed Build: " enable="false" default=""/>
+		<setting id="buildversion" type="text" label="Installed Version: " enable="false" default=""/>
+		<setting id="buildtheme" type="text" label="Current Theme: " enable="false" default=""/>
 		<setting id="latestversion" type="text" label="Latest Version: " enable="false" default=""/>
 		<setting id="lastbuildcheck" type="text" label="Next check for build update: " enable="false" default=""/>
 		<setting id="disableupdate" type="bool" label="Disable Update Notification" default="false"/>
 		<setting id="installmethod" type="enum" label="Which method would you like to use after Install?" values="Always Ask|Reload Profile|Force Close" default="2" enable="!eq(-4,false)"/>
 		<setting type="lsep" label="Show Builds:"/>
-		<setting id="show16" type="bool" label="Show Jarvis(v16.0) Builds" default="true"/>
-		<setting id="show17" type="bool" label="Show Krypton(v17.0) Builds" default="true"/>
-		<setting id="show18" type="bool" label="Show Leia(v18.0) Builds" default="true"/>
 		<setting id="seperate" type="bool" label="Do not seperate based off version" default="false"/>
 		<setting id="installed" type="bool" label="Build Installed" visible="false" default="false" />
 		<setting id="extract" type="text" label="Extract Build %" visible="false" default="100" />
@@ -33,12 +30,12 @@
 		<setting id="pvrclient" type="text" label="Enabled PVR:" enable="false" default="" visible="false"/>
 	</category>
 
-	<category label="Ajustes">
+	<category label="Maintenance">
 		<setting type="lsep" label="Backup Location: "/>
 		<setting id="path" type="folder" label="Choose Backup Storage Location" default=""/>
 		<setting id="rompath" type="folder" label="Choose Roms Extract Location Location" default=""/>
 		<setting type="lsep" label="Maintenance Options: "/>
-		<setting id="clearcache" type="bool" label="Limpar Cache ao Entrar" default="false"/>
+		<setting id="clearcache" type="bool" label="Clear Cache on Startup" default="false"/>
 		<setting type="lsep" label="Package Folder Limit" />
 		<setting id="filesize_alert" type="slider" label="Max Folder Size MB" default="200" range="25,25,500" option="int" />
 		<setting type="lsep" label="Thumbnails Folder Limit" />
@@ -62,28 +59,18 @@
 		<setting id="includeattheflix" type="bool" label="Include At The Flix Cache DB: " default="true" enable="!eq(-12,false)" visible="!eq(-12,false)"/>
 		<setting id="includemancaveflix" type="bool" label="Include Man Cave Flix Cache DB: " default="true" enable="!eq(-13,false)" visible="!eq(-13,false)"/>
 		<setting id="includestartec" type="bool" label="Include StarTec Cache DB: " default="true" enable="!eq(-14,false)" visible="!eq(-14,false)"/>		
-
-
 	</category>
 
 	<category label="Install Settings">
 		<setting type="lsep" label="Keep Settings When Installing Build:"/>
-		<setting id="keepfavourites" type="bool" label="Keep My Favourites" default="false"/>
-		<setting id="favouriteslastsave" type="text" label="Last Time Favourites Saved: " enable="false" default=""/>
+		<setting id="keepfavourites" type="bool" label="Keep My Favourites" default="true"/>
+		<setting id="favouriteslastsave" type="text" label="Last Time Favourites Saved: " enable="true" default=""/>
 		<setting id="keepsources" type="bool" label="Keep My Sources" default="false"/>
 		<setting id="keepprofiles" type="bool" label="Keep My Profiles" default="false"/>
-		<setting id="keepadvanced" type="bool" label="Keep My AdvancedSettings.xml" default="false"/>
+		<setting id="keepadvanced" type="bool" label="Keep My AdvancedSettings.xml" default="true"/>
 		<setting id="keeprepos" type="bool" label="Keep Installed Repositories" default="false"/>
 		<setting id="keepsuper" type="bool" label="Keep Super Favourites" default="false"/>
-		<setting id="keepwhitelist" type="bool" label="Keep My Whitelist Addons" default="false"/>
-		<setting type="lsep" label="Third Party Wizard Support:"/>
-		<setting id="enable3rd" type="bool" label="Enable 3rd Party Wizards" default="false"/>
-		<setting id="wizard1name" type="text" label="Wizard 1 Name: " enable="true" visible="!eq(-1,false)" default=""/>
-		<setting id="wizard1url" type="text" label="Wizard 1 URL: " enable="true" visible="!eq(-2,false)" default=""/>
-		<setting id="wizard2name" type="text" label="Wizard 2 Name: " enable="true" visible="!eq(-3,false)" default=""/>
-		<setting id="wizard2url" type="text" label="Wizard 2 URL: " enable="true" visible="!eq(-4,false)" default=""/>
-		<setting id="wizard3name" type="text" label="Wizard 3 Name: " enable="true" visible="!eq(-5,false)" default=""/>
-		<setting id="wizard3url" type="text" label="Wizard 3 URL: " enable="true" visible="!eq(-6,false)" default=""/>
+		<setting id="keepwhitelist" type="bool" label="Keep My Whitelist Addons" default="false"/>		
 	</category>
 
 	<category label="Trakt Settings">
@@ -104,23 +91,19 @@
 
 	<category label="Real Debrid Settings">
 		<setting type="lsep" label="Save Real Debrid Data:"/>
-		<setting id="keepdebrid" type="bool" label="Keep My Real Debrid Data" default="false"/>
+		<setting id="keepdebrid" type="bool" label="Keep My Real Debrid Data" default="true"/>
 		<setting id="realspecto" type="text" label="Specto: " enable="false" default=""/>
 		<setting id="urlresolver" type="text" label="Url Resolver: " enable="false" default=""/>
 		<setting id="mrknowresolver" type="text" label="Mr Known Url Resolver: " enable="false" default=""/>
 		<setting id="debridlastsave" type="text" label="Last Time Real Debrid Saved: " enable="false" default=""/>
 	</category>
-	
-	<category label="Alluc Settings">
-		<setting type="lsep" label="Save Alluc Login Data:"/>
-		<setting id="keepalluc" type="bool" label="Keep My Alluc Login Data" default="false"/>
-		<setting id="alluczen" type="text" label="Zen: " enable="false" default=""/>
-		<setting id="allucnan" type="text" label="Nan Scrapers: " enable="false" default=""/>
-		<setting id="allucspecto" type="text" label="Specto: " enable="false" default=""/>
-		<setting id="allucsalts" type="text" label="Salts: " enable="false" default=""/>
-		<setting id="alluclastsave" type="text" label="Last Time Alluc Login Saved: " enable="false" default=""/>
-	</category>
 
+	<category label="Premiumize Settings">
+		<setting type="lsep" label="Save Premiumize Data:"/>
+		<setting id="keeppremiumize" type="bool" label="Keep My Premiumize Data" default="false"/>
+		<setting id="premiumizelastsave" type="text" label="Last Time Premiumize Saved: " enable="false" default=""/>
+	</category>	
+		
 	<category label="Login Settings">
 		<setting type="lsep" label="Save Login Data:"/>
 		<setting id="keeplogin" type="bool" label="Keep My Login Data" default="false"/>
@@ -147,14 +130,13 @@
 
 	<category label="Misc Settings">
 		<setting id="developer" type="bool" label="Show Developer Menu: " enable="true" default=""/>
-		<setting id="show15" type="bool" label="Show Test Builds" default="true"/>
 		<setting id="adult" type="bool" label="Show Adult Addons: " enable="true" default="false"/>
 		<setting id="auto-view" type="bool" label="Enable Auto View" default="true"/>
 		<setting id="viewType" type="number" label="View Type" default="50" enable="!eq(-1,false)"/>
 		<setting type="lsep" label="Notification Window on Startup:"/>
 		<setting id="notify" type="bool" label="Disable Notification on Startup" />
 		<setting id="noteid" type="text" label="Latest Notification" visible="false" />
-		<setting id="notedismiss" type="bool" label="Dispensar or Lembre-me mais tarde" visible="false" />
+		<setting id="notedismiss" type="bool" label="Dismiss or Remind me later" visible="false" />
 		<setting id="ogwiz" type="bool" label="Show Orignal Wizard Layout" default="false" />
 	</category>
 
