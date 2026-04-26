@@ -39,8 +39,8 @@ def clear_thumbnails():
 		if os.path.exists(os.path.join(user_path, 'Thumbnails')):
 			shutil.rmtree(os.path.join(user_path, 'Thumbnails'))
 	except Exception as e:
-    		xbmc.log('Failed to delete %s. Reason: %s' % (os.path.join(user_path, 'Thumbnails'), e), xbmc.LOGINFO)
-    		return
+		xbmc.log('Failed to delete %s. Reason: %s' % (os.path.join(user_path, 'Thumbnails'), e), xbmc.LOGINFO)
+		return
 	try:
 		if os.path.exists(os.path.join(db_path, 'Textures13.db')):
 			os.unlink(os.path.join(db_path, 'Textures13.db'))
@@ -139,14 +139,14 @@ def fresh_start(standalone=False):
 		return
 
 def clear_packages():
-    file_count = len([name for name in os.listdir(packages)])
-    for filename in os.listdir(packages):
-    	file_path = os.path.join(packages, filename)
-    	try:
-    	       if os.path.isfile(file_path) or os.path.islink(file_path):
-    	       	os.unlink(file_path)
-    	       elif os.path.isdir(file_path):
-    	       	shutil.rmtree(file_path)
-    	except Exception as e:
-    		xbmc.log('Failed to delete %s. Reason: %s' % (file_path, e), xbmc.LOGINFO)
-    xbmcgui.Dialog().notification(addon_name, str(file_count)+' ' + local_string(30046), addon_icon, 5000, sound=False)  # Packages Cleared
+	file_count = len([name for name in os.listdir(packages)])
+	for filename in os.listdir(packages):
+		file_path = os.path.join(packages, filename)
+		try:
+			if os.path.isfile(file_path) or os.path.islink(file_path):
+				os.unlink(file_path)
+			elif os.path.isdir(file_path):
+				shutil.rmtree(file_path)
+		except Exception as e:
+			xbmc.log('Failed to delete %s. Reason: %s' % (file_path, e), xbmc.LOGINFO)
+	xbmcgui.Dialog().notification(addon_name, str(file_count)+' ' + local_string(30046), addon_icon, 5000, sound=False)  # Packages Cleared

@@ -125,7 +125,6 @@ def PlayVideoB(id, forcePlayer=False):
     dp.close()
     xbmc.Player().play(pl, windowed=False)
 
-
 def GetVideoInformation(id):
     #id = 'H7iQ4sAf0OE' #test for HLSVP
     #id = 'ofHlUJuw8Ak' #test for stereo
@@ -141,7 +140,6 @@ def GetVideoInformation(id):
     except : pass
     
     return video, links
-
 
 def GetVideoInfo(id):
     url  = 'http://www.youtube.com/watch?v=%s&safeSearch=none' % id

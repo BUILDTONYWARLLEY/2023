@@ -51,7 +51,7 @@
                 <label>Build Menu</label>
                 <align>center</align>
                 <aligny>center</aligny>
-                <texturefocus colordiffuse="FF12B2E7">Button/testbuttonfo.png</texturefocus>
+                <texturefocus colordiffuse="FF01DF01">Button/testbuttonfo.png</texturefocus>
                 <texturenofocus>Button/testbuttonnf.png</texturenofocus>
                 <onleft>202</onleft>
                 <onright>202</onright>
@@ -67,7 +67,7 @@
                 <label>Ignore</label>
                 <align>center</align>
                 <aligny>center</aligny>
-                <texturefocus colordiffuse="FF12B2E7">Button/testbuttonfo.png</texturefocus>
+                <texturefocus colordiffuse="FF01DF01">Button/testbuttonfo.png</texturefocus>
                 <texturenofocus>Button/testbuttonnf.png</texturenofocus>
                 <onleft>201</onleft>
                 <onright>201</onright>

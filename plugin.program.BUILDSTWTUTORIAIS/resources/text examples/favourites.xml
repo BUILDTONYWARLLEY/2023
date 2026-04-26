@@ -1,0 +1,7 @@
+<favourites>
+    <favourite name="[B][COLOR green]Clear Packages[/COLOR][/B]" thumb="special://home/addons/plugin.program.matrixguiwiz/icon.png">RunPlugin(&quot;plugin://plugin.program.matrixguiwiz/?mode=clearpackages&quot;,return)</favourite>
+    <favourite name="[B][COLOR green]Clear Thumbnails[/COLOR][/B]" thumb="special://home/addons/plugin.program.matrixguiwiz/icon.png">RunPlugin(&quot;plugin://plugin.program.matrixguiwiz/?mode=clearthumbs&quot;,return)</favourite>
+    <favourite name="[B][COLOR green]Clear Cache[/COLOR][/B]" thumb="special://home/addons/plugin.program.matrixguiwiz/icon.png">RunPlugin(&quot;plugin://plugin.program.matrixguiwiz/?mode=clearcache&quot;,return)</favourite>
+    <favourite name="[B][COLOR green]Total Clean[/COLOR][/B]" thumb="special://home/addons/plugin.program.matrixguiwiz/icon.png">RunPlugin(&quot;plugin://plugin.program.matrixguiwiz/?mode=totalclean&quot;,return)</favourite>
+    <favourite name="[B][COLOR green]Force Close[/COLOR][/B]" thumb="special://home/addons/plugin.program.matrixguiwiz/icon.png">RunPlugin(&quot;plugin://plugin.program.matrixguiwiz/?mode=forceclose&quot;,return)</favourite>
+</favourites>
