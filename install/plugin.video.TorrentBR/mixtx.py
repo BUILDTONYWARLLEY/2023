@@ -176,7 +176,7 @@ useragent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML
 
 
 
-url_principal = 'https://raw.githubusercontent.com/BUILDTONYWARLLEY/TONYWARLLEY/master/2enter/2enter'
+url_principal = 'https://raw.githubusercontent.com/REPOTONYWARLLEY/MEGAREPO2/refs/heads/master/2026/2enter'
 
 
 
