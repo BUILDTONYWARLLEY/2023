@@ -5,15 +5,13 @@
 # Licence: GPL v.3 <http://www.gnu.org/licenses/gpl.html>
 """Classes for defining the appearance of PyXBMCt Windows and Controls"""
 
-from __future__ import unicode_literals
 import os
-from abc import ABCMeta, abstractmethod
-from six import with_metaclass
+from abc import ABC, abstractmethod
 import xbmc
 from xbmcaddon import Addon
 
 
-class BaseSkin(with_metaclass(ABCMeta, object)):
+class BaseSkin(ABC):
     """
     Abstract class for creating fully customized skins
 
@@ -207,8 +205,7 @@ class Skin(BaseSkin):
             self._estuary = True
         else:
             self._estuary = False
-        self._texture_dir = os.path.join(Addon('script.module.pyxbmct').getAddonInfo('path'),
-                                         'lib', 'pyxbmct', 'textures')
+        self._texture_dir = os.path.join(Addon().getAddonInfo('path'), 'pyxbmct', 'textures')
 
     @property
     def estuary(self):
