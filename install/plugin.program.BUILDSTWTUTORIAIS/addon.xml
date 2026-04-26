@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.BUILDSTWTUTORIAIS" name="-[B][COLOR white].[COLOR mediumblue]WIZARD [COLOR lime]BUILDS [COLOR yellow]TWTutoriais [COLOR white][/COLOR][/B]-" version="1.6.0" provider-name="[B][COLOR lime]TWTutoriais - YES, I'M THE BEST[/COLOR][/B]">
+<addon id="plugin.program.BUILDSTWTUTORIAIS" name="[B][COLOR white].[COLOR mediumblue]WIZARD [COLOR lime]BUILDS [COLOR yellow]TWTUTORIAIS [COLOR white][/COLOR][/B]" version="1.7.0" povider-name="[B][COLOR lime]TWTutoriais - YES, I'M THE BEST[/COLOR][/B]">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.six" />
@@ -11,7 +11,10 @@
   <extension point="xbmc.service" library="startup.py" start="startup" />
   <extension point="xbmc.addon.metadata">
     <summary lang="en">WIZARD BUILDS TWTUTORIAIS</summary>
-    <description lang="en">[COLOR yellow]OFICIAL WIZARD BUILDS TWTUTORIAIS[/COLOR]
+    <description lang="en">
+	[COLOR yellow]* CRÉDITOS ao CMan and SG Builds Gui Wizard. 
+[COLOR lime]Pois este WIZARD é a versão do plugin.program.cmansgwiz deles, editado e traduzido pela MEGAREPO, * ADDITIONAL CREDITS Thanks to Surfacingx for the base code used in this add-on.
+	[COLOR yellow]WIZARD BUILDS TWTUTORIAIS[/COLOR]
 [COLOR lime]Instalador para instalação das BUILDS TONYWARLLEY TUTORIAIS, Cópia não autorizada, Uso conteúdo é pessoal não upamos nada que não esteja na internet e canal não se responsabiliza danos materiais e judiciais do mal uso do Kodi. Fazemos instalações e review sob vigência
 Fair Use[/COLOR]
 
